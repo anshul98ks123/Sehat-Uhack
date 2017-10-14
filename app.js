@@ -18,8 +18,7 @@ const indexRoutes = require("./routes/index"),
       ajax        = require('./routes/ajax');
 
 mongoose.Promise = global.Promise;
-
-mongoose.connect('mongodb://anshul98ks123:password@ds147821.mlab.com:47821/finalproject');
+mongoose.connect('mongodb://localhost/uhack',{useMongoClient: true});
 
 app.use(flash());
 app.use(bodyParser.urlencoded({extended: true}));

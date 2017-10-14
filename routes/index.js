@@ -27,6 +27,7 @@ router.get('/signup', (req,res) => {
 router.post('/signup', (req,res) => {
     User.register(new User({
         username: req.body.username,
+        email: req.body.email,
         avatar: req.body.avatar
     }), req.body.password, (err, user) => {
         if(err){

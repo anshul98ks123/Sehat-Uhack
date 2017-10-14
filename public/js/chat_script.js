@@ -55,9 +55,6 @@ $(function () {
     $('#myvid').hide();
     step1();
 
-
-
-
     peer.on('disconnected',()=>{
        alert("Disconnected");
        location.reload(true);
