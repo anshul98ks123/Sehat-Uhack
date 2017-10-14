@@ -1,72 +1,99 @@
 <% include ./partials/header.ejs %>
 <% include ./partials/animation.ejs %>
 <% include ./partials/navbar.ejs %>
-
-    <br><br>
-    <div class="ui inverted vertical masthead center aligned segment" style="background-image: url('/img/pexels.jpeg')">
-        <% include ./partials/flash.ejs %>
-        <div class="ui text container">
-            <h1 class="ui inverted header" id="companyName" style="font-family: 'Luckiest Guy', cursive">
-                CodeNsit
-            </h1>
-            <h2 class="handwriteFont">Start up Message and Video Chat with anyone</h2>
-            <!--<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>-->
-        </div>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    #header {
+        font-family: 'Raleway', sans-serif;
+        color: #02B3E4;
+        text-align: center;
+        font-size: 40px;
+        text-align: center;
+    }
+    .bluecard {
+        -webkit-box-shadow: 0px 4px 22px 2px rgba(0,0,0,0.4);
+        -webkit-transition: all .3s ease-in-out;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        background: #5684D2;
+        width: 250px;
+        height: 300px;
+        margin-top: 15px;
+        margin-left: 5%;
+        border-radius: 5px;
+        margin-right: 5%;
+        background: linear-gradient(to bottom, #5684D2 80%, #EF0D33 50%);
+        background-size: 100% 200%;
+        background-position:top;
+        vertical-align: top;
+    }
+    .bluecard:hover {
+        -webkit-transform:scale(.95);
+        background-position: bottom;
+    }
+    .bluecard p {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.9em;
+        font-weight: lighter;
+    }
+    .bluecard img {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+    }
+    .secondchild {
+        background: linear-gradient(to bottom, #FBAD8C 80%, #EF0D33 50%);
+        background-size: 100% 200%;
+        background-position: top;
+    }
+</style>
+<br><br>
+<div class="ui inverted vertical masthead center aligned segment" style="background-image: url('https://cdn.pixabay.com/photo/2016/10/26/23/14/form-1772949_960_720.jpg'); background-size: cover">
+    <% include ./partials/flash.ejs %>
+    <div class="ui text container" style="color: white">
+        <h1 class="ui inverted header" id="companyName" style="font-family: 'Luckiest Guy', cursive">
+            CodeNsit
+        </h1>
+        <h2 class="handwriteFont">Start up Message and Video Chat with anyone</h2>
+        <!--<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>-->
+    </div>
+</div>
+<br><br>
+<p id="header">Dive into a brighter tomorrow !</p>
+<center>
+    <div class="bluecard">
+        <img src="/img/sk3.png"><br>
+        <p>Exercise Session at Home</p>
     </div>
 
-    <div class="ui vertical stripe segment">
-        <div class="ui middle aligned stackable grid container">
-            <div class="row">
-                <div class="eight wide column">
-                    <h3 class="ui header" style="font-family: 'Graduate', cursive;">We Help Students and Teacher</h3>
-                    <p class="handwriteFont">Just Sign up and connect with your Friend or Teacher from anywhere</p>
-                    <h3 class="ui header" style="font-family: 'Graduate', cursive;">Understand Any Concept for Free</h3>
-                    <p class="handwriteFont">Yes that's right, You don't have to pay a single Dime for Any minutes of call or Any amount of Messages</p>
-                </div>
-                <div class="six wide right floated column">
-                    <img src="/img/Webinar.jpg" class="ui large bordered rounded image">
-                </div>
-            </div>
-            <!--<div class="row">-->
-                <!--<div class="center aligned column">-->
-                    <!--<a class="ui huge button">Check Them Out</a>-->
-                <!--</div>-->
-            <!--</div>-->
-        </div>
+    <div class="bluecard secondchild">
+        <img src="/img/sk3.png"><br>
+        <p>Exercise Session at Home</p>
     </div>
 
-
-    <div class="ui vertical stripe quote segment">
-        <div class="ui equal width stackable internally celled grid">
-            <div class="center aligned row">
-                <div class="column">
-                    <div class="commentBox">
-                        <h3 class="commentFont">"What a Concept!!That too free"</h3>
-                        <p>
-                            <b>-Siddharth</b> Undergrad at NSIT
-                        </p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="commentBox">
-                        <h3 class="commentFont">"Quality is also not compromised"</h3>
-                        <p>
-                            <b>-Cherub</b> Undergrad at NSIT
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="bluecard">
+        <img src="/img/sk3.png"><br>
+        <p>Exercise Session at Home</p>
+    </div>
+    <div class="bluecard secondchild">
+        <img src="/img/sk3.png"><br>
+        <p>Exercise Session at Home</p>
     </div>
 
-    <div class="ui vertical stripe segment">
-        <div class="ui text container">
-            <h3 class="ui header" style="font-family: 'Graduate', cursive;">So Start Testing and Enjoy</h3>
-            <p>For any suggestions You can contact US</p>
-            <p>Anshul Mittal&nbsp&nbsp&nbsp&nbsp anshulmittal0409@gmail.com</p>
-            <p>Anshul Kumar&nbsp&nbsp&nbsp&nbsp anshul98ks123@gmail.com</p>
-        </div>
+    <div class="bluecard">
+        <img src="/img/sk3.png"><br>
+        <p>Exercise Session at Home</p>
     </div>
+
+    <div class="bluecard secondchild">
+        <img src="/img/sk3.png"><br>
+        <p>Exercise Session at Home</p>
+    </div>
+</center>
+<br><br>
 <% include ./partials/footer.ejs %>
 <!--closing tag of div with id=box which is opened in animation.ejs -->
 </div>

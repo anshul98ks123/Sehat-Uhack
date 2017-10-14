@@ -18,6 +18,12 @@ router.get('/chat', isLoggedIn, function (req,res) {
     });
 });
 
+router.get('/mouse', isLoggedIn, function (req,res) {
+   res.render('mouse', {
+      page: 'mouse'
+   });
+});
+
 // register form
 router.get('/signup', (req,res) => {
     res.render('signup');
