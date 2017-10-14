@@ -15,6 +15,7 @@ const express        = require("express"),
 // requiring routes
 const indexRoutes = require("./routes/index"),
       chats       = require("./routes/chats"),
+      handtrack   = require('./routes/handtrack'),
       ajax        = require('./routes/ajax');
 
 mongoose.Promise = global.Promise;
@@ -69,6 +70,7 @@ app.use('/peerjs',peerServer);
 app.use(indexRoutes);
 app.use(ajax);
 app.use(chats);
+app.use(handtrack);
 
 peerServer.on('connection',(id)=>{
     console.log("New peer connected:");
