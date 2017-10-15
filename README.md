@@ -2,6 +2,19 @@
 
 This is a project for **UHack USIT**
 
+We made this Project for Analysing Parkinson's Disease by fun games.
+
+A very cool feature in this project is using Computer Vision to track your hand using webcam and control the Basket in The Game COLLECT COINS
+
+![screenshot from 2017-10-15 12-34-56](https://user-images.githubusercontent.com/26252118/31582605-eb50df9a-b177-11e7-9487-a5b75e6b1325.png)
+
+![screenshot from 2017-10-15 12-35-21](https://user-images.githubusercontent.com/26252118/31582611-0d0e649a-b178-11e7-99af-c057d65dccb4.png)
+
+![screenshot from 2017-10-15 12-35-28](https://user-images.githubusercontent.com/26252118/31582615-1af99d4a-b178-11e7-826c-a280f2ed3edd.png)
+
+![screenshot from 2017-10-15 12-35-40](https://user-images.githubusercontent.com/26252118/31582617-27aff48a-b178-11e7-88c4-9bee42a66a49.png)
+
+
 In order to run this project you need
 
 ```
