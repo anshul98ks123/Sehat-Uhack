@@ -48,7 +48,7 @@ $(function(){
          }
          localStorage.setItem('myStorage',JSON.stringify(obj));
          
-         $.post('mousejson',{arr: obj},function() {
+         $.post('/mousejson',{data: value},function() {
             console.log("Written to JSON");
          });
          

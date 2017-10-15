@@ -11,12 +11,12 @@
   <br><br>
 <% include ./partials/flash.ejs %>
     <div class="header">
-      <h1>JSHG - Single Thread 1</h1>
-      <h2>demo for single thread</h2>
+      <h1>ANALYSE AND PLAY</h1>
+      <h2>Coin Collect Game</h2>
     </div>
     <div class="content">
       <h2 id="default-table" class="content-subhead">
-        Single Thread Demo on normal task<br>
+        Press learn afer run<br>
         <a class="button-jshg button-start pure-button" id="startManualBut" onClick="runManualTest()">Run</a>
         <a class="button-jshg button-stop pure-button" id="stopManualBut" onClick="stopManualTest()" style="display:none">Stop</a>
         <a class="button-jshg button-start pure-button" id="learnManualBut" onClick="JSHG.learnSkinColor()" style="display:none">Learn</a>
@@ -25,10 +25,10 @@
         <div id="webcameShownArea" style="float:left"></div>
         <div id="gestureShownHere" style="float:right"></div>
       </div>
-      <div class="reportArea">
-        <p id="performance"></p>
-        <p id="gestureReportMessage"></p>
-      </div>
+      <!--<div class="reportArea">-->
+        <!--<p id="performance"></p>-->
+        <!--<p id="gestureReportMessage"></p>-->
+      <!--</div>-->
 
       <span id='xcoordinate'></span>
       <span id='ycoordinate'></span>
@@ -150,9 +150,8 @@ function update()
    	temp=temp/devMed.length;
    	console.log(temp);
    	clearInterval(Intervalend);
-   	$.post('/receivejson',{data: temp},(success)=>{
-   	    if(success)
-   	        console.log(success);
+   	$.post('/receivejson',{data: temp},(stage)=>{
+   	    console.log(stage);
     })
    	stopManualTest();
   }
@@ -314,13 +313,13 @@ function movehand(){
                 if (elapsed > 0) {
                     var gestureFPS = Math.floor(nFrame/(elapsed/1000)) + " fps";
                     var mainFPS = Math.floor(JSHG.performance_.nFrame/(JSHG.performance_.elapsed/1000)) + " fps";
-                    $("#performance").html("Main window runs at " + mainFPS + ", Gesture Recognizer runs at " + gestureFPS);
+//                    $("#performance").html("Main window runs at " + mainFPS + ", Gesture Recognizer runs at " + gestureFPS);
                 }
 
                 $('#xcoordinate').text(gesture.handPos[0]);
 
                 $('#ycoordinate').text(gesture.handPos[1]);
-                $("#gestureReportMessage").html("<pre><code>"+JSON.stringify(gesture, null, 4)+"</code></pre>");
+//                $("#gestureReportMessage").html("<pre><code>"+JSON.stringify(gesture, null, 4)+"</code></pre>");
                 lastTime = new Date().getTime();
                 nFrame++;
             }
