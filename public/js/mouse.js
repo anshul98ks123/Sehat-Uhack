@@ -58,7 +58,7 @@ $(function(){
             $('#winner').html('You lose !');
            else
             $('#winner').html('You Win !');
-         location.reload();
+         // location.reload();
          //console.log(obj);
     }
 
